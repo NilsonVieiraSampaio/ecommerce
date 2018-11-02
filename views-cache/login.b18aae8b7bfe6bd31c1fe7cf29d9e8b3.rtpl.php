@@ -34,6 +34,11 @@
     <p class="login-box-msg">Sign in to start your session</p>
 
     <form action="/admin/login" method="post">
+       <?php if( $error != '' ){ ?>                            
+       <div class="alert alert-danger" role="alert">
+        <?php echo htmlspecialchars( $error, ENT_COMPAT, 'UTF-8', FALSE ); ?>
+        </div>
+        <?php } ?>
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Login" name="login">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -67,7 +72,7 @@
     </div>
     <!-- /.social-auth-links -->
 
-    <a href="#">I forgot my password</a><br>
+    <a href="/admin/forgot">Esqueci a senha</a><br>
     <a href="register.html" class="text-center">Register a new membership</a>
 
   </div>

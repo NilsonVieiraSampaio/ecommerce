@@ -1,0 +1,1 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><li><a href="/categories/4">buquês</a></li><li><a href="/categories/5">Dia da Mulher</a></li><li><a href="/categories/2">krafts</a></li>

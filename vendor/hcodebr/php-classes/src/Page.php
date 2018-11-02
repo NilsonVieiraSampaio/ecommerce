@@ -28,7 +28,7 @@ class Page {
 
 		$this->tpl = new Tpl;
 
-		$this->setdata($this->options["data"]);
+		$this->setData($this->options["data"]);
 
 		if ($this->options["header"] === true ) $this->tpl->draw("header");
 
@@ -38,7 +38,7 @@ class Page {
 	{
 
 		foreach ($data as $key => $value) {
-			$this->tpl->assing($key, $value);
+			$this->tpl->assign($key, $value);
 		}
 
 	}
